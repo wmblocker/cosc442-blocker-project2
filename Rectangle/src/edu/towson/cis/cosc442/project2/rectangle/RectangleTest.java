@@ -26,21 +26,35 @@ public class RectangleTest {
 	}
 
 	/**
-	 * Test for the getArea() method of the {@link Rectangle} class.
+	 * Test for the getArea() method of the {@link Rectangle} class and the rect1 object
 	 */
 	@Test
-	public void testGetArea() {
-		assertEquals(10.0, rect1.getArea(),0.001);
-		assertEquals(6.0, rect2.getArea(),0.001);
+	public void testGetAreaRect1() {
+		assertEquals(25.0, rect1.getArea(),0.001);
+	}
+	
+	/**
+	 * Test for the getArea() method of the {@link Rectangle} class and the rect2 object
+	 */
+	@Test
+	public void testGetAreaRect2(){
+		assertEquals(9.0, rect2.getArea(),0.001);
 	}
 
 	/**
-	 * Test for the getDiagonal() method of the {@link Rectangle} class.
+	 * Test for the getDiagonal() method of the {@link Rectangle} class and the rect1 object
 	 */
 	@Test
-	public void testGetDiagonal() {
-		assertEquals(5.3852, rect1.getDiagonal(), 0.0001);
-		assertEquals(3.6056, rect2.getDiagonal(), 0.0001);
+	public void testGetDiagonalRect1() {
+		assertEquals(7.0710, rect1.getDiagonal(), 0.0001);
+	}
+	
+	/**
+	 * Test for the getDiagonal() method of the {@link Rectangle} class and the rect2 object
+	 */
+	@Test
+	public void testGetDiagonalRect2(){
+		assertEquals(4.24264068, rect2.getDiagonal(), 0.0001);
 	}
 	
 	/**
